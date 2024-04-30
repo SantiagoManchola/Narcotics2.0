@@ -1,0 +1,895 @@
+@font-face {
+    font-family: Acumin Wide;
+    src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProWide/Acumin%20Pro%20Wide%20UltraBlack.otf);
+}
+
+@font-face {
+    font-family: Acumin ExtraCondensed;
+    src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Light.otf);
+}
+
+@font-face {
+    font-family: AcuminC;
+    src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold%20Italic.otf);
+}
+
+@font-face {
+    font-family: AcuminCItalic;
+    src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Light.otf);
+}
+
+$blue-color :#29C6A7;
+$yellow-color : #F4A23E;
+$text-color : #FFFFFF;
+$black-color : #000000;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $text-color;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    transition: all .3s;
+    z-index: 1;
+
+
+    figure {
+        background-color: $blue-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        align-items: center;
+        gap: 20px;
+
+        section {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                cursor: pointer;
+                object-fit: contain;
+            }
+
+        }
+
+
+    }
+}
+
+main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)), url('/assets/images/maersk.png');
+
+    h1 {
+        color: $yellow-color;
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 38px;
+        text-align: center;
+        margin: 20px 0;
+        font-family: Acumin Wide;
+
+        strong {
+            font-weight: 600;
+            font-family: Acumin ExtraCondensed;
+
+        }
+    }
+
+    p {
+        font-family: AcuminC;
+        font-weight: 700;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    a {
+        color: $yellow-color;
+        font-family: AcuminCItalic;
+        font-weight: 600;
+    }
+
+
+    .p2 {
+        font-weight: 400;
+        text-align: start;
+        font-family: AcuminCItalic;
+        padding: 1em;
+    }
+
+    strong {
+        font-weight: 900;
+        font-family: AcuminCItalic;
+    }
+
+    .separator {
+        margin: 40px 0;
+
+        img {
+            width: 100%;
+        }
+
+    }
+}
+
+.loop {
+    margin-top: 100px;
+}
+
+.maersk {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+        background-image: url('/assets/images/fondoverde.png');
+        padding: 20px;
+        background-size: cover;
+
+        img {
+            object-fit: cover;
+        }
+
+        p {
+            background-image: url('/assets/images/fondoverde.png');
+            background-repeat: no-repeat;
+            text-align: start;
+            margin-top: -100px;
+            padding: 2em;
+            color: $black-color;
+
+        }
+    }
+
+    section {
+        margin: 5%;
+        margin-top: -30px;
+    }
+
+    &__lastP {
+        text-align: start;
+        margin: 5%;
+        padding: 1em;
+        font-weight: 500;
+        font-family: AcuminCItalic;
+
+        a {
+            color: $yellow-color;
+            font-family: AcuminCItalic;
+
+        }
+
+        span {
+            background-color: $blue-color;
+            color: $black-color;
+            font-weight: 900;
+            font-family: AcuminCItalic;
+            height: 55px;
+            padding-inline: 5px;
+            margin-inline: 5px;
+
+
+        }
+
+    }
+}
+
+.evidence {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url('/assets/images/maersk.png');
+
+    img {
+        width: 100%
+    }
+
+    figcaption {
+        color: $text-color;
+        display: flex;
+        gap: 5px;
+
+        img {
+            width: 21px;
+            height: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: Acumin ExtraCondensed;
+            padding: 0;
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    
+
+    small {
+        background-color: $yellow-color;
+        font-size: 32px;
+        color: $black-color;
+        line-height: 40px;
+        font-weight: 950;
+        font-family: Acumin Wide;
+        padding-inline: 5px;
+
+
+    }
+
+    span {
+        font-weight: 600;
+        font-family: Acumin ExtraCondensed;
+        background-color: $yellow-color;
+        font-size: 36px;
+        color: $black-color;
+        text-align: center;
+        font-family: AcuminCItalic;
+        padding-inline: 10px;
+
+    }
+
+    .lastSpan {
+        color: $text-color;
+        margin-top: -5px;
+
+    }
+}
+
+.loop,
+.antonio,
+.jose_fabian,
+.policies,
+.map,
+.ship,
+.audiograma,
+.cams,
+.home,
+.buzos,
+.chats,
+.trepador,
+.maps {
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .over {
+        margin-top: -100px;
+    }
+
+    .over2 {
+        margin-top: -50px;
+    }
+
+    .wbg {
+        background-image: url('/assets/images/fondoverde.png');
+        padding: -20px;
+    }
+
+    section {
+        position: relative;
+        display: flex;
+
+        span {
+            position: absolute;
+            color: $blue-color;
+            top: 50px;
+            left: 20px;
+            border: 2px solid $blue-color;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 24px;
+            font-family: AcuminCItalic;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    }
+
+    figcaption {
+        color: $text-color;
+        display: flex;
+        gap: 10px;
+        padding: 1em;
+
+        img {
+            width: 21px;
+            height: 16px;
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: Acumin ExtraCondensed;
+            padding: 0;
+        }
+    }
+}
+
+.p3 {
+    background-color: #EBE7DB;
+    padding: 1em 2em;
+
+    p {
+        text-align: start;
+        color: $black-color;
+
+
+        a {
+            color: $blue-color;
+        }
+
+        strong {
+            background-color: $blue-color;
+            padding-inline: 10px;
+        }
+
+        span {
+            color: $black-color;
+            font-family: AcuminCItalic;
+
+        }
+
+    }
+
+}
+
+.story {
+    display: flex;
+    gap: 10px;
+
+    img {
+        height: 29px;
+    }
+}
+
+.textFinal {
+    color: $blue-color;
+    text-align: right;
+    border-right: 2px solid $blue-color;
+    padding: 10px 20px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h4 {
+        font-size: 21px;
+        text-transform: uppercase;
+        font-family: AcuminCItalic;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        background-image: url('/assets/images/bgYellow.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2em;
+
+
+        p {
+            text-align: start;
+            color: $black-color;
+            margin: 50px 0;
+            padding: 1em;
+        }
+    }
+}
+
+footer {
+    background-color: $blue-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 50px 0;
+
+    }
+
+    small {
+        color: $black-color;
+        font-size: 16px;
+        text-align: center;
+        font-family: AcuminCItalic;
+        font-weight: 950;
+
+    }
+}
+
+.carrousel {
+    // width: 70%;
+    // margin: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    font-family: AcuminCItalic;
+    position: relative;
+
+
+
+    .arrow {
+        object-fit: contain;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    &__title {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-inline: 10%;
+
+        div {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        small {
+            font-family: AcuminCItalic;
+            font-size: 18px;
+            text-transform: uppercase;
+
+        }
+
+    }
+
+    &__news {
+        display: flex;
+        padding-inline: 40px;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+
+        figure {
+            display: flex;
+            overflow: hidden;
+            gap: 20px;
+            transition: all .5s ease-out;
+
+
+            section {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                border-right: 1px solid $text-color;
+                padding: 5px;
+                transition: all .5s ease;
+
+                img {
+                    width: 150px;
+                    object-fit: cover;
+
+                }
+
+                small {
+                    text-transform: uppercase;
+                }
+
+
+                button {
+                    position: absolute;
+                    background-color: red;
+                    left: 100px;
+                    top: 50%;
+                    height: 40px;
+                    width: 40px;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    font-size: 22px;
+                    cursor: pointer;
+
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+}
+
+
+@media (min-width : 850px) {
+  
+    header {
+        width: 100%;
+
+        figure {
+            position: relative;
+            justify-content: center;
+            padding: 1em 2em;
+            width: 100%;
+
+            section {
+                position: absolute;
+                right: 2em;
+            }
+
+        }
+    }
+
+    .scrolled {
+        figure {
+            background-color: $black-color;
+            justify-content: start;
+
+            svg {
+
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 5%;
+
+        h1 {
+            font-size: 70px;
+            line-height: 70px;
+        }
+
+        .p1,
+        .p2 {
+            width: 70%;
+            margin: 0 15%;
+            padding: 1em;
+        }
+
+        .separator {
+            width: 70%;
+            margin-inline: 15%;
+        }
+    }
+
+    .maersk {
+        width: 70%;
+        margin: 0 15%;
+
+        figure {
+            display: flex;
+            background-image: none;
+            padding: 0;
+
+            img {
+                background-image: url('/assets/images/fondoverde.png');
+
+            }
+
+            p {
+                background-image: none;
+                color: $text-color;
+                margin-top: 0;
+                padding: 1em;
+                margin-bottom: 100px;
+            }
+        }
+
+        section {
+            margin: 0;
+            width: 90%;
+            margin-top: -50px;
+        }
+
+        &__lastP {
+
+            span {
+                position: relative;
+                padding-inline: 5px;
+            }
+        }
+
+    }
+
+    .loop,
+    .antonio,
+    .jose_fabian,
+    .policies,
+    .ship,
+    .audiograma,
+    .cams,
+    .home,
+    .buzos,
+    .chats,
+    .trepador,
+    .maps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 20px 15%;
+
+        &__img {
+            width: 350px;
+        }
+
+        &__photo {
+            width: 90%;
+        }
+
+        &__imgs {
+            display: flex;
+            background-image: url('/assets/images/fondoverde.png');
+
+            img {
+                &:last-child {
+                    margin-left: -110px;
+                    background: none;
+                    padding-top: 40px;
+                }
+            }
+        }
+
+        &__imgs2 {
+            margin-top: -100px;
+
+            img {
+                height: 400px;
+                object-fit: contain;
+                object-position: center;
+
+                &:first-child {
+                    padding-top: 100px;
+
+                }
+
+                &:last-child {
+                    margin-left: -100px;
+                }
+
+            }
+        }
+
+        figcaption {
+            justify-content: center;
+            padding: 1em 2em;
+            width: 80%;
+            margin-inline: 10%;
+            gap: 5px;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .evidence {
+        width: 70%;
+        margin: 0 15%;
+
+        section {
+            display: flex;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        figcaption {
+            justify-content: center;
+            padding: 1em 2em;
+            width: 80%;
+            margin-inline: 10%;
+
+            p {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .policies {
+
+        div {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        section {
+
+            img {
+                width: 220px;
+                margin-left: -40px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        .over {
+            margin-top: 0;
+        }
+    }
+
+    h2 {
+        width: 70%;
+        margin-inline: 15%;
+    }
+
+    .map,
+    .flourish-embed-iframe,
+    .flourish-chart {
+        width: 70% !important;
+        margin-inline: 15%;
+
+        figcaption {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    .p3 {
+        padding: 0;
+        width: 70%;
+        margin-inline: 15%;
+        padding: 1em;
+
+    }
+
+    .p3__wbg {
+        background-color: transparent;
+
+        p {
+            color: $text-color;
+        }
+    }
+
+    .story {
+        width: 70%;
+        margin: 20px 15%;
+        gap: 20px;
+        justify-content: center;
+
+        section {
+            margin: 0;
+        }
+    }
+
+    .textFinal {
+        width: 70%;
+        margin-inline: 15%;
+    }
+
+    .credits {
+        width: 70%;
+        margin-inline: 15%;
+
+        h4 {
+            font-size: 18px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+        }
+
+        figcaption {
+            background-image: url('/assets/images/fondoamarilloPc.png');
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 20px 40px;
+
+            p {
+                width: 90%;
+            }
+
+        }
+    }
+
+    .carrousel {
+        width: 70%;
+        margin: 5% 15%;
+
+        &__news {
+
+            figure {
+
+                section {
+                    flex-direction: row;
+
+                    img {
+                        width: 180px;
+                    }
+                }
+            }
+
+            button {
+                bottom: 0;
+            }
+        }
+    }
+
+    footer {
+
+        figure {
+            flex-direction: row;
+            gap: 100px;
+        }
+
+    }
+
+}
+
+@media (max-width:400px) {
+    h2 {
+
+        small,
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .maersk {
+        padding: 5px;
+
+        figure {
+            background-size: contain;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    header {
+        figure {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}
