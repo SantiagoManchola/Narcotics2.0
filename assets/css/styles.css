@@ -541,6 +541,7 @@ footer small {
   text-transform: uppercase;
 }
 .carrousel__news figure section button {
+  color: white;
   position: absolute;
   background-color: red;
   left: 100px;
