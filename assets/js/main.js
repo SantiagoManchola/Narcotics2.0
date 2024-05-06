@@ -45,16 +45,64 @@ function updateCarousel() {
 
 $( document ).ready( function() {
   var images = [
-  "assets/images/patronIncautaciones/1.png",
-  "assets/images/patronIncautaciones/2.png",
-  "assets/images/patronIncautaciones/3.png",
-  "assets/images/patronIncautaciones/4.png",
-  "assets/images/patronIncautaciones/5.png",
-  "assets/images/patronIncautaciones/6.png",
-  "assets/images/patronIncautaciones/7.png",
-  "assets/images/patronIncautaciones/8.png",
-  "assets/images/patronIncautaciones/9.png",
+    "assets/images/patronIncautaciones/1.webp",
+    "assets/images/patronIncautaciones/2.webp",
+    "assets/images/patronIncautaciones/3.webp",
+    "assets/images/patronIncautaciones/4.webp",
+    "assets/images/patronIncautaciones/5.webp",
+    "assets/images/patronIncautaciones/6.webp",
+    "assets/images/patronIncautaciones/7.webp",
+    "assets/images/patronIncautaciones/8.webp",
+    "assets/images/patronIncautaciones/9.webp",
+    "assets/images/patronIncautaciones/10.webp",
+    "assets/images/patronIncautaciones/11.webp",
+    "assets/images/patronIncautaciones/12.webp",
+    "assets/images/patronIncautaciones/13.webp",
+    "assets/images/patronIncautaciones/14.webp",
+    "assets/images/patronIncautaciones/15.webp",
+    "assets/images/patronIncautaciones/16.webp",
+    "assets/images/patronIncautaciones/17.webp",
+    "assets/images/patronIncautaciones/18.webp",
+    "assets/images/patronIncautaciones/19.webp",
+    "assets/images/patronIncautaciones/20.webp",
+    "assets/images/patronIncautaciones/21.webp",
+    "assets/images/patronIncautaciones/22.webp",
+    "assets/images/patronIncautaciones/23.webp",
+    "assets/images/patronIncautaciones/24.webp",
+    "assets/images/patronIncautaciones/25.webp",
+    "assets/images/patronIncautaciones/26.webp",
+    "assets/images/patronIncautaciones/27.webp",
+    "assets/images/patronIncautaciones/28.webp",
+    "assets/images/patronIncautaciones/29.webp",
+    "assets/images/patronIncautaciones/30.webp",
+    "assets/images/patronIncautaciones/31.webp",
+    "assets/images/patronIncautaciones/32.webp",
+    "assets/images/patronIncautaciones/33.webp",
+    "assets/images/patronIncautaciones/34.webp",
+    "assets/images/patronIncautaciones/35.webp",
+    "assets/images/patronIncautaciones/36.webp",
+    "assets/images/patronIncautaciones/37.webp",
+    "assets/images/patronIncautaciones/38.webp",
+    "assets/images/patronIncautaciones/39.webp",
+    "assets/images/patronIncautaciones/40.webp",
+    "assets/images/patronIncautaciones/41.webp",
+    "assets/images/patronIncautaciones/42.webp",
+    "assets/images/patronIncautaciones/43.webp",
+    "assets/images/patronIncautaciones/44.webp",
+    "assets/images/patronIncautaciones/45.webp",
+    "assets/images/patronIncautaciones/46.webp",
+    "assets/images/patronIncautaciones/47.webp",
+    "assets/images/patronIncautaciones/48.webp",
+    "assets/images/patronIncautaciones/49.webp",
+    "assets/images/patronIncautaciones/50.webp",
+    "assets/images/patronIncautaciones/51.webp",
+    "assets/images/patronIncautaciones/52.webp",
+    "assets/images/patronIncautaciones/53.webp",
+    "assets/images/patronIncautaciones/54.webp",
+    "assets/images/patronIncautaciones/55.webp",
+    "assets/images/patronIncautaciones/56.webp",    
 ];
+
 
 // TweenMax can tween any property of any object. We use this object to cycle through the array
 var obj = {curImg: 0};
@@ -76,27 +124,22 @@ var tween = TweenMax.to(obj, 0.5,
 var controller = new ScrollMagic.Controller();
 
 // build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "100%", triggerHook : 0})
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: "100%", triggerHook : 0})
         .setTween(tween)
         .setPin("#imagesequence-1")
         .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-
-// handle form change
-$("form.move input[name=duration]:radio").change(function () {
-  scene.duration($(this).val());
-});
 })
 
 
 $( document ).ready( function() {
   var images = [
-  "assets/images/scrollNavieras/C1.png",
-  "assets/images/scrollNavieras/C2.png",
-  "assets/images/scrollNavieras/C3.png",
-  "assets/images/scrollNavieras/C4.png",
-  "assets/images/scrollNavieras/C5.png",
-  "assets/images/scrollNavieras/C6.png",
+  "assets/images/scrollNavieras/C1.webp",
+  "assets/images/scrollNavieras/C2.webp",
+  "assets/images/scrollNavieras/C3.webp",
+  "assets/images/scrollNavieras/C4.webp",
+  "assets/images/scrollNavieras/C5.webp",
+  "assets/images/scrollNavieras/C6.webp",
 ];
 
 // TweenMax can tween any property of any object. We use this object to cycle through the array
@@ -112,10 +155,7 @@ var tween = TweenMax.to(obj, 0.5,
     ease: Linear.easeNone,			// show every image the same ammount of time
     onUpdate: function () {
       $("#imagesequence-2").css("background-image", `url('${images[obj.curImg]}')`);
-      $(".animatedText").css("transform", "translateY(" + (-1000 * obj.scrollTop) + "px)");
-
-
-      
+      $(".animatedText").css("transform", "translateY(" + (-600* obj.scrollTop) + "vh)");  
     }
   }
 );
@@ -126,20 +166,9 @@ var tween = TweenMax.to(obj, 0.5,
 var controller = new ScrollMagic.Controller();
 
 // build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger-2", duration: "100%", triggerHook : 0})
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger-2", duration: "1200%", triggerHook : 0})
         .setTween(tween)
         .setPin("#imagesequence-2")
         .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-
-// handle form change
-$("form.move input[name=duration]:radio").change(function () {
-  scene.duration($(this).val());
-});
 })
-
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger-3", duration: "100%", triggerHook : 0})
-        // .setTween(tween)
-        .setPin("#imagesequence-2")
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
