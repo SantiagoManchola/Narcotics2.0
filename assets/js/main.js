@@ -141,18 +141,15 @@ $( document ).ready( function() {
   "assets/images/scrollNavieras/C5.webp",
   "assets/images/scrollNavieras/C6.webp",
 ];
-
-// TweenMax can tween any property of any object. We use this object to cycle through the array
 var obj = {curImg: 0, scrollTop : 0};
 
-// create tween
 var tween = TweenMax.to(obj, 0.5,
   {
     scrollTop: 1,
-    curImg: images.length - 1,	// animate propery curImg to number of images
-    roundProps: "curImg",				// only integers so it can be used as an array index
-    immediateRender: true,			// load first image automatically
-    ease: Linear.easeNone,			// show every image the same ammount of time
+    curImg: images.length - 1,
+    roundProps: "curImg",
+    immediateRender: true,
+    ease: Linear.easeNone,
     onUpdate: function () {
       $("#imagesequence-2").css("background-image", `url('${images[obj.curImg]}')`);
       $(".animatedText").css("transform", "translateY(" + (-600* obj.scrollTop) + "vh)");  
@@ -160,15 +157,12 @@ var tween = TweenMax.to(obj, 0.5,
   }
 );
 
-
-
-// init controller
 var controller = new ScrollMagic.Controller();
 
 // build scene
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger-2", duration: "1200%", triggerHook : 0})
         .setTween(tween)
         .setPin("#imagesequence-2")
-        .addIndicators() // add indicators (requires plugin)
+        .addIndicators()
         .addTo(controller);
 })
