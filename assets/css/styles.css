@@ -52,7 +52,7 @@ main {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url("../images/bg.jpeg");
+  background-image: url("../images/bg.webp");
   background-size: 100%;
 }
 main h1 {
@@ -174,7 +174,7 @@ main .separator img {
   align-items: center;
 }
 .maersk figure {
-  background-image: url("/assets/images/fondoverde.png");
+  background-image: url("/assets/images/fondoverde.webp");
   padding: 20px;
   background-size: cover;
 }
@@ -182,7 +182,7 @@ main .separator img {
   object-fit: cover;
 }
 .maersk figure p {
-  background-image: url("/assets/images/fondoverde.png");
+  background-image: url("/assets/images/fondoverde.webp");
   background-repeat: no-repeat;
   text-align: start;
   margin-top: -100px;
@@ -215,7 +215,7 @@ main .separator img {
 }
 
 .evidence {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0)), url("/assets/images/maersk.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0)), url("/assets/images/maersk.webp");
 }
 .evidence img {
   width: 100%;
@@ -324,7 +324,7 @@ h2 .lastSpan {
 .chats .wbg,
 .trepador .wbg,
 .maps .wbg {
-  background-image: url("/assets/images/fondoverde.png");
+  background-image: url("/assets/images/fondoverde.webp");
   padding: -20px;
 }
 .loop section,
@@ -482,7 +482,7 @@ h2 .lastSpan {
   width: 100%;
 }
 .credits figcaption {
-  background-image: url("/assets/images/bgYellow.png");
+  background-image: url("/assets/images/bgYellow.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
@@ -608,7 +608,7 @@ footer small {
 }
 
 .bannerAmarillo{
-  background-image: url("/assets/images/fondoAmarillo.png");
+  background-image: url("/assets/images/fondoAmarillo.webp");
   width: 100%;
   height: 600px;
   display: flex;
@@ -623,7 +623,7 @@ footer small {
   text-align: center;
 }
 .bannerVerde h3{
-  background: url("/assets/images/bgVerde.png") center no-repeat;
+  background: url("/assets/images/bgVerde.webp") center no-repeat;
   width: 100%;
   min-height: 289px;
   font-size: 45px;
@@ -641,7 +641,7 @@ footer small {
   color: black;
 }
 .bannerWhite{
-  background: url("/assets/images/bgWhite.png") center;
+  background: url("/assets/images/bgWhite.webp") center;
   background-size: cover;
   height: 640px;
   width: 100%;
@@ -799,7 +799,7 @@ footer small {
   color: black;
 }
 .preFooter{
-  background: url("/assets/images/fondoamarilloPc.png") center no-repeat;
+  background: url("/assets/images/fondoamarilloPc.webp") center no-repeat;
   display: flex;
   flex-direction:column;
   justify-content: space-between;
@@ -888,7 +888,7 @@ footer small {
     padding: 0;
   }
   .maersk figure img {
-    background-image: url("/assets/images/fondoverde.png");
+    background-image: url("/assets/images/fondoverde.webp");
   }
   .maersk figure p {
     background-image: none;
@@ -965,7 +965,7 @@ footer small {
   .trepador__imgs,
   .maps__imgs {
     display: flex;
-    background-image: url("/assets/images/fondoverde.png");
+    background-image: url("/assets/images/fondoverde.webp");
   }
   .loop__imgs img:last-child,
   .antonio__imgs img:last-child,
@@ -1264,7 +1264,7 @@ footer small {
     visibility: hidden;
   }
   .bannerAmarillo{
-    background-image: url(/assets/images/bgAmarilloMovil.png);
+    background-image: url(/assets/images/bgAmarilloMovil.webp);
     min-height: 736px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1359,7 +1359,7 @@ footer small {
     font-size: 20px;
     line-height: 28px;
     height: 100%;
-    background: url(/assets/images/preFooterbg.png) center no-repeat;
+    background: url(/assets/images/preFooterbg.webp) center no-repeat;
     background-size: cover;
     max-width: 270px;
   }
