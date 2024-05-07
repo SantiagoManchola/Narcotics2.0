@@ -129,7 +129,7 @@ var tween = TweenMax.to(obj, 0.5,
 var controller = new ScrollMagic.Controller();
 
 // build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: "600%", triggerHook : 0})
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: "50%", triggerHook : 0})
         .setTween(tween)
         .setPin("#imagesequence-1")
         .addIndicators() // add indicators (requires plugin)
