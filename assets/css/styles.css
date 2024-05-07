@@ -114,6 +114,9 @@ main .separator img {
 footer small a{
   text-decoration: none;
 }
+#myimg{
+  max-width: 1920px;
+}
 .loop, .video {
   margin-top: 72px;
   width: 100%;
