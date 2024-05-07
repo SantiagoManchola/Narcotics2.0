@@ -114,7 +114,6 @@ main .separator img {
 footer small a{
   text-decoration: none;
 }
-
 .loop, .video {
   margin-top: 72px;
   width: 100%;
@@ -131,9 +130,6 @@ footer small a{
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-  .s0{
-    padding-top: 150px;  
   }
 .sequence2{
   width: 100%;
