@@ -7,8 +7,16 @@
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Light.otf);
 }
 @font-face {
+  font-family: Acumin ExtraCondensedBold;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Bold.otf);
+}
+@font-face {
   font-family: AcuminC;
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold%20Italic.otf);
+}
+@font-face {
+  font-family: AcuminPCItalic;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Semibold%20Italic.otf);
 }
 @font-face {
   font-family: AcuminProCondBold;
@@ -20,7 +28,7 @@
 }
 @font-face {
   font-family: AcuminPBlack;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Black.otf);
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Black%20Italic.otf);
 }
 @font-face {
   font-family: AcuminPCSemibold;
@@ -30,13 +38,39 @@
   font-family: AcuminPExBlack;
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin\ Pro\ ExtraCond\ Black.otf);
 }
+@font-face {
+  font-family: AcuminPCondensedBlack;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black.otf);
+}
+@font-face {
+  font-family: AcuminPCondensedBlackItalic;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black\ Italic.otf);
+}
+@font-face {
+  font-family: AcuminPCUBItalic;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ UltraBlack\ Italic.otf);
+}
+@font-face {
+  font-family: AcuminPCMItalic;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium\ Italic.otf);
+}
+@font-face {
+  font-family: AcuminPCBlack;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black.otf);
+}
+@font-face {
+  font-family: AcuminPCM;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium.otf);
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: #FFFFFF;
 }
-
+.h2-chats{
+  font-family: AcuminPCondensedBlack;
+}
 
 header {
   width: 100vw;
@@ -103,8 +137,6 @@ main p {
 }
 main a *, main a {
   color: #F4A23E;
-  font-family: AcuminCItalic;
-  font-weight: 600;
 }
 main .p2 {
   font-weight: 400;
@@ -115,7 +147,7 @@ main .p2 {
 main .p2 span{
   background: #F4A23E;
   color: black;
-  font-weight: bold;
+  font-family: AcuminPCondensedBlack;
 }
 main strong {
   font-weight: 900;
@@ -424,6 +456,8 @@ h2 .lastSpan {
 .maps figcaption img {
   width: 21px;
   height: 16px;
+  margin-top: 3px;
+  margin-right: 12px;
 }
 .loop figcaption p,
 .video figcaption p,
@@ -464,7 +498,7 @@ h2 .lastSpan {
 }
 .p3 p span {
   color: #000000;
-  font-family: AcuminCItalic;
+  font-family: Acumin ExtraCondensedBold;
 }
 .p3 p i{
   color: black;
@@ -500,9 +534,11 @@ h2 .lastSpan {
   text-align: center;
 }
 .credits h4 {
-  font-size: 21px;
+  font-size: 30px !important;
+  line-height: 35px;
   text-transform: uppercase;
-  font-family: AcuminCItalic;
+  font-family: AcuminPCBlack;
+  text-align: left;
 }
 .credits img {
   width: 100%;
@@ -537,9 +573,9 @@ footer figure {
 }
 footer small {
   color: #000000;
-  font-size: 16px;
+  font-size: 22px;
   text-align: center;
-  font-family: AcuminCItalic;
+  font-family: AcuminPCSemibold;
   font-weight: 950;
 }
 
@@ -551,7 +587,6 @@ footer small {
   font-family: AcuminCItalic;
   position: relative;
   max-width: 1070px;
-  align-self: center;
 }
 .carrousel .arrow {
   object-fit: contain;
@@ -571,7 +606,7 @@ footer small {
   background-color: red;
 }
 .carrousel__title small {
-  font-family: AcuminCItalic;
+  font-family: AcuminPCM;
   font-size: 30px;
   line-height: 33px;
   text-transform: uppercase;
@@ -627,6 +662,7 @@ footer small {
   border-radius: 50%;
   font-size: 22px;
   cursor: pointer;
+  font-family: AcuminPCondensedBlack;
 }
 .loading{
   display: none;
@@ -669,7 +705,7 @@ footer small {
   font-size: 45px;
   line-height: 49px;
   color: black;
-  font-family: AcuminC;
+  font-family: AcuminPCItalic;
   max-width: 1135px;
   display: flex;
   justify-content: center;
@@ -680,7 +716,7 @@ footer small {
 .bannerVerde h3 b{
   font-weight: bold;
   color: black;
-  font-family: "AcuminPBlack";
+  font-family: "AcuminPCondensedBlackItalic";
 }
 .bannerWhite{
   background: url("/assets/images/bgWhite.webp") center;
@@ -697,22 +733,24 @@ footer small {
   font-size: 30px;
   line-height: 40px;
   color: black;
-  font-family: AcuminPBlack;
+  font-family: AcuminC;
   max-width: 649px;
 }
 .bannerWhite p b{
   font-weight: bold;
   color: black;
+  font-family: AcuminPCondensedBlackItalic;
 }
 .bannerWhite p span{
   font-weight: bold;
   color: #D92429;
+  font-family: AcuminPCUBItalic;
 }
 .bannerWhite p b a{
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-family: AcuminC;
+  font-family: AcuminPCUBItalic;
   background-color: #F4A23E;
 }
 .bannerWhite .container{
@@ -794,13 +832,13 @@ footer small {
   line-height: 40px;
   font-size: 28px;
   font-weight: 400;
-  font-family: AcuminC;
   text-align: left;
   width: 256px;
   height: 60px;
   text-align: center;
   border: none;
   border-radius: 10px;
+  font-family: AcuminPCondensedBlack;
 }
 
 .englishVersion{
@@ -833,12 +871,14 @@ footer small {
   font-size: 32px;
   line-height: 39px;
   text-transform: none;
-  font-weight: normal;
   margin-right: 15px;
+  font-family: AcuminPCMItalic;
+  font-weight: normal;
 }
 .englishVersion .textContainer p span{
   background-color: #F4A23E;
   color: black;
+  font-family: AcuminC;
 }
 .preFooter{
   background: url("/assets/images/fondoamarilloPc.webp") center no-repeat;
@@ -870,7 +910,7 @@ footer small {
   line-height: 40px;
   font-size: 30px;
   font-weight: 400;
-  font-family: AcuminPBlack;
+  font-family: AcuminPCondensedBlack;
   width: 314px;
   height: 60px;
   text-align: center;
@@ -886,7 +926,12 @@ footer small {
 p.p-6{
   font-family: AcuminPCSemibold !important;
 }
-
+.credits section img{
+  max-width: 460px;
+}
+.outCamera{
+  display: none;
+}
 @media (min-width: 1050px) {
   header {
     width: 100%;
@@ -1220,21 +1265,12 @@ p.p-6{
     font-size: 18px;
   }
   .credits section {
-    width: 999px;
+    width: 958px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 135px;
   }
-  .credits section h4{
-    font-size: 30px;
-    line-height: 35px;
-    text-align: left;
-  }
-  .credits section img{
-
-  }
-
   .credits figcaption {
     display: flex;
     justify-content: start;
@@ -1248,7 +1284,7 @@ p.p-6{
   }
   .carrousel {
     width: 70%;
-    margin: 5% 15%;
+    margin: 5% auto;
   }
   .carrousel__news figure section {
     flex-direction: row;
@@ -1302,7 +1338,7 @@ p.p-6{
   }
   .loop figcaption{
     padding: 0 51px;
-    justify-content: left;
+    justify-content: center;
     margin-bottom: 45px;
   }
   .loop figcaption p{
@@ -1430,7 +1466,12 @@ p.p-6{
   .sequence2{
     background-position: 20% 0%;
   }
-
+  .inCamera{
+    display: none;
+  }
+  .outCamera{
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
