@@ -11,8 +11,24 @@
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold%20Italic.otf);
 }
 @font-face {
+  font-family: AcuminProCondBold;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold.otf);
+}
+@font-face {
   font-family: AcuminCItalic;
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Light.otf);
+}
+@font-face {
+  font-family: AcuminPBlack;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Black.otf);
+}
+@font-face {
+  font-family: AcuminPCSemibold;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Semibold.otf);
+}
+@font-face {
+  font-family: AcuminPExBlack;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin\ Pro\ ExtraCond\ Black.otf);
 }
 * {
   padding: 0;
@@ -461,7 +477,15 @@ h2 .lastSpan {
 .story img {
   height: 29px;
 }
-
+.story .outIcon{
+  height: 43px;
+}
+.story p{
+  font-size: 30px;
+  line-height: 32px;
+  font-family: 'AcuminPBlack';
+  color: black;
+}
 .textFinal {
   color: #29C6A7;
   text-align: right;
@@ -526,6 +550,8 @@ footer small {
   gap: 40px;
   font-family: AcuminCItalic;
   position: relative;
+  max-width: 1070px;
+  align-self: center;
 }
 .carrousel .arrow {
   object-fit: contain;
@@ -536,7 +562,7 @@ footer small {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-inline: 10%;
+  /* margin-inline: 10%; */
 }
 .carrousel__title div {
   width: 10px;
@@ -546,7 +572,8 @@ footer small {
 }
 .carrousel__title small {
   font-family: AcuminCItalic;
-  font-size: 18px;
+  font-size: 30px;
+  line-height: 33px;
   text-transform: uppercase;
 }
 .carrousel__news {
@@ -568,16 +595,22 @@ footer small {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  border-right: 1px solid #FFFFFF;
   padding: 5px;
   transition: all 0.5s ease;
 }
+.carrousel__news figure section:nth-child(1){
+  border-right: 1px solid #FFFFFF;
+}
+
 .carrousel__news figure section img {
   width: 150px;
   object-fit: cover;
 }
 .carrousel__news figure section small {
   text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: AcuminProCondBold;
 }
 .carrousel__news figure section button {
   color: white;
@@ -595,7 +628,9 @@ footer small {
   font-size: 22px;
   cursor: pointer;
 }
-
+.loading{
+  display: none;
+}
 .imgs-registro-belg{
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -619,13 +654,16 @@ footer small {
 }
 .bannerVerde{
   width: 100%;
+  max-width: 1485px;
+  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: url(/assets/images/bgVerde.webp) center no-repeat;
+  background-size: cover;
 }
 .bannerVerde h3{
-  background: url("/assets/images/bgVerde.webp") center no-repeat;
   width: 100%;
   min-height: 289px;
   font-size: 45px;
@@ -637,10 +675,12 @@ footer small {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 920px;
 }
 .bannerVerde h3 b{
   font-weight: bold;
   color: black;
+  font-family: "AcuminPBlack";
 }
 .bannerWhite{
   background: url("/assets/images/bgWhite.webp") center;
@@ -657,7 +697,8 @@ footer small {
   font-size: 30px;
   line-height: 40px;
   color: black;
-  font-family: AcuminC;
+  font-family: AcuminPBlack;
+  max-width: 649px;
 }
 .bannerWhite p b{
   font-weight: bold;
@@ -675,7 +716,6 @@ footer small {
   background-color: #F4A23E;
 }
 .bannerWhite .container{
-  width: 100%;
   max-width: 1081px;
 }
 
@@ -807,30 +847,31 @@ footer small {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  padding: 112px 160px 90px 160px;
+  padding: 100px 60px;
   align-items: center;
-  gap: 80px;
+  background-size: contain;
+  position: relative;
 }
 .preFooter p{
   color: black;
   text-align: left;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 30px;
+  line-height: 40px;
   letter-spacing: 0;
-  height: 340px;
-  padding: 30px;
+  height: 100%;
   max-width: 763px;
+  font-family: AcuminPExBlack;
 }
 
 .preFooter a{
   color: white;
   background-color: #D92429;
-  padding: 19px 12px;
+  padding: 35px 24px;
   line-height: 40px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
-  font-family: AcuminC;
-  width: 256px;
+  font-family: AcuminPBlack;
+  width: 314px;
   height: 60px;
   text-align: center;
   border: none;
@@ -839,8 +880,12 @@ footer small {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  position: absolute;
+  bottom: -30px;
 }
-
+p.p-6{
+  font-family: AcuminPCSemibold !important;
+}
 
 @media (min-width: 1050px) {
   header {
@@ -866,7 +911,6 @@ footer small {
     font-size: 70px;
     line-height: 70px;
   }
-  main .p1,
   main .p2 {
     width: 100%;
     margin: 0 20%;
@@ -874,6 +918,15 @@ footer small {
     max-width: 980px;
     align-self: center;
     font-size: 30px;
+    line-height: 40px;
+  }
+  main .p1{
+    width: 100%;
+    margin: 0 20%;
+    padding: 1em;
+    max-width: 980px;
+    align-self: center;
+    font-size: 34px;
     line-height: 40px;
   }
   main .separator {
@@ -1141,6 +1194,9 @@ footer small {
   .p3__wbg p {
     color: #FFFFFF;
   }
+  .p3 p i strong{
+    font-family: AcuminPBlack;
+  }
   .story {
     width: 70%;
     margin: 20px 15%;
@@ -1149,6 +1205,9 @@ footer small {
   }
   .story section {
     margin: 0;
+    max-width: 801px;
+    min-width: 801px;
+    padding: 20px 30px;
   }
   .textFinal {
     width: 70%;
@@ -1263,8 +1322,9 @@ footer small {
     padding: 46px 10px !important;
   }
   .story .outIcon{
-    visibility: hidden;
+    display: none;
   }
+  .story i
   .bannerAmarillo{
     background-image: url(/assets/images/bgAmarilloMovil.webp);
     min-height: 736px;
