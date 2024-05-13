@@ -592,43 +592,46 @@ footer small {
   font-family: AcuminCItalic;
   position: relative;
   max-width: 1070px;
-  margin-top: 30px;
-  align-items: center;
+  margin: 30px 0;
 }
 .carrousel .arrow {
   object-fit: contain;
-  height: 30px;
+  height: 52px;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 35%;
 }
 .carrousel__title {
   display: flex;
   gap: 10px;
   align-items: center;
-  /* margin-inline: 10%; */
+  padding: 0 40px;
+  align-items: start;
 }
 .carrousel__title div {
-  width: 10px;
+  margin-top: 7px;
   height: 10px;
+  width: 10px;
   border-radius: 50%;
   background-color: red;
 }
 .carrousel__title small {
   font-family: AcuminPCM;
   font-size: 23px;
-  line-height: 38px;
+  line-height: 28px;
   text-transform: uppercase;
 }
 .carrousel__news {
   display: flex;
-  padding-inline: 40px;
   align-items: center;
   gap: 20px;
   overflow: hidden;
+  justify-content: center;
 }
 .carrousel__news figure {
   display: flex;
   overflow: hidden;
-  gap: 20px;
   transition: all 0.5s ease-out;
 }
 .carrousel__news figure section {
@@ -636,8 +639,8 @@ footer small {
   position: relative;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 5px;
+  gap: 30px;
+  padding: 25px;
   transition: all 0.5s ease;
 }
 .carrousel__news figure section:nth-child(1){
@@ -645,7 +648,7 @@ footer small {
 }
 
 .carrousel__news figure section img {
-  width: 150px;
+  width: 120px;
   object-fit: cover;
 }
 .carrousel__news figure section small {
@@ -655,15 +658,14 @@ footer small {
   font-family: AcuminProCondBold;
   max-width: 150px;
 }
-.carrousel__news figure section button {
+.carrousel__news figure section a {
   color: white;
   position: absolute;
   background-color: red;
-  bottom: -15%;
-  right: -15%;
-  height: 70px;
-  width: 70px;
-  border: none;
+  bottom: -9%;
+  right: -9%;
+  width: 36px !important;
+  height: 36px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -671,6 +673,13 @@ footer small {
   font-size: 22px;
   cursor: pointer;
   font-family: AcuminPCondensedBlack;
+}
+.plus{
+  height: 13px !important;
+  width: 13px !important;
+}
+.arrow{
+  display: none;
 }
 .loading{
   display: none;
@@ -1330,9 +1339,7 @@ p.p-6{
   }
   .carrousel__news figure section {
     flex-direction: row;
-  }
-  .carrousel__news figure section img {
-    width: 180px;
+    align-items: start;
   }
   .carrousel__news button {
     bottom: 0;
@@ -1349,6 +1356,10 @@ p.p-6{
   }
   .bannerWhite{
     height: 640px;
+  }
+  .carrousel__news figure section small{
+    max-height: 150px;
+    min-width: 203px;
   }
 }
 @media (max-width: 1050px) {
@@ -1517,6 +1528,24 @@ p.p-6{
   }
   .outCamera{
     display: block;
+  }
+  .carrousel__news figure section{
+    border-right: 0px transparent !important;
+    padding: 0 25%;
+  }
+  .carrousel__news figure section a {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .plus{
+    height: 25px !important;
+    width: 25px !important;
+  }
+  .arrow{
+    display: block;
+  }
+  .carrousel__news figure section img {
+    width: 167px;
   }
 }
 

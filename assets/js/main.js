@@ -1,6 +1,5 @@
 const header = document.getElementById("header");
 const nextBtn = document.getElementById("right");
-const prevBtn = document.getElementById("left");
 const sectionNew = document.querySelectorAll(".sectionNew");
 
 // Function to apply classes based on the scroll
@@ -23,15 +22,6 @@ nextBtn.addEventListener('click', () => {
         currentIndex++;
     } else {
         currentIndex = 0; // Vuelve al primer elemento si llega al final
-    }
-    updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = sectionNew.length - 1; // Va al último elemento si está en el primero
     }
     updateCarousel();
 });
