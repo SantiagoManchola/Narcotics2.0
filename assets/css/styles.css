@@ -535,13 +535,15 @@ h2 .lastSpan {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 30px;
 }
 .credits h4 {
-  font-size: 30px !important;
-  line-height: 35px;
+  font-size: 18.21px !important;
+  line-height: 21.2px;
   text-transform: uppercase;
   font-family: AcuminPCBlack;
-  text-align: left;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .credits img {
   width: 100%;
@@ -590,6 +592,8 @@ footer small {
   font-family: AcuminCItalic;
   position: relative;
   max-width: 1070px;
+  margin-top: 30px;
+  align-items: center;
 }
 .carrousel .arrow {
   object-fit: contain;
@@ -610,8 +614,8 @@ footer small {
 }
 .carrousel__title small {
   font-family: AcuminPCM;
-  font-size: 30px;
-  line-height: 33px;
+  font-size: 23px;
+  line-height: 38px;
   text-transform: uppercase;
 }
 .carrousel__news {
@@ -646,18 +650,19 @@ footer small {
 }
 .carrousel__news figure section small {
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
   font-family: AcuminProCondBold;
+  max-width: 150px;
 }
 .carrousel__news figure section button {
   color: white;
   position: absolute;
   background-color: red;
-  left: 100px;
-  top: 50%;
-  height: 40px;
-  width: 40px;
+  bottom: -15%;
+  right: -15%;
+  height: 70px;
+  width: 70px;
   border: none;
   display: flex;
   justify-content: center;
@@ -686,6 +691,7 @@ footer small {
 @media (max-width: 1050px) {
   .imgs-registro-belg {
     grid-template-columns: repeat(3,minmax(0,200px));
+    margin: 0 44px;
   }
   .imgs-registro-belg img:nth-child(1) {
     grid-column: 1 / 2; /* Starts on the third column line and ends on the fifth column line */
@@ -707,10 +713,12 @@ footer small {
 .bannerAmarillo{
   background-image: url("/assets/images/fondoAmarillo.webp");
   width: 100%;
-  height: 600px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .bannerVerde{
   width: 100%;
@@ -744,12 +752,14 @@ footer small {
 }
 .bannerWhite{
   background: url("/assets/images/bgWhite.webp") center;
+  padding: 20px 0;
   background-size: cover;
-  height: 640px;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
 }
 .bannerWhite p{
   text-align: left;
@@ -949,11 +959,20 @@ footer small {
 p.p-6{
   font-family: AcuminPCSemibold !important;
 }
+.credits section{
+  margin: 10px 35px;
+}
 .credits section img{
   max-width: 460px;
 }
 .outCamera{
   display: none;
+}
+.textRight{
+  text-align: right !important;
+}
+.inIconContainer{
+  position: relative;
 }
 @media (min-width: 1050px) {
   header {
@@ -1325,6 +1344,12 @@ p.p-6{
   .inIcon{
     display: none;
   }
+  .bannerAmarillo{
+    height: 600px;
+  }
+  .bannerWhite{
+    height: 640px;
+  }
 }
 @media (max-width: 1050px) {
   h1{
@@ -1377,7 +1402,7 @@ p.p-6{
     margin-bottom: 10px;
   }
   .story .p3{
-    margin: 0 45px;
+    margin: 0 45px 40px 45px;
     padding: 46px 10px !important;
   }
   .story .outIcon{
@@ -1432,6 +1457,7 @@ p.p-6{
     font-size: 25px;
     line-height: 26px;
   }
+  
   .bannerWhite .container{
     margin: 0 5em 0 5em;
   }
@@ -1469,17 +1495,15 @@ p.p-6{
   }
   .credits .preFooter{
     padding: 48px 60px 48px 60px;
-    min-height: 500px;
-    background: none;
-    gap: 0;
+    background: url(/assets/images/preFooterbg.webp) center no-repeat;
+    background-size: cover; 
+    max-width: 500px;
+    height: 100%;
   }
   .credits .preFooter p{
     font-size: 20px;
     line-height: 28px;
     height: 100%;
-    background: url(/assets/images/preFooterbg.webp) center no-repeat;
-    background-size: cover;
-    max-width: 270px;
   }
 
   .credits .preFooter a{
