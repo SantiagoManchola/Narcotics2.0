@@ -120,7 +120,7 @@ var controller = new ScrollMagic.Controller();
 // build scene
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: "20%", triggerHook : 0.5})
         .setTween(tween)
-        .addIndicators() // add indicators (requires plugin)
+        /* .addIndicators() // add indicators (requires plugin) */
         .addTo(controller);
 })
 
@@ -156,7 +156,7 @@ var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger-2", duration: "1200%", triggerHook : 0})
         .setTween(tween)
         .setPin("#imagesequence-2")
-        .addIndicators()
+        /* .addIndicators() */
         .addTo(controller);
 })
 
