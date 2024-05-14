@@ -62,6 +62,10 @@
   font-family: AcuminPCM;
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium.otf);
 }
+@font-face {
+  font-family: AcuminPCR;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Regular.otf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -608,6 +612,7 @@ footer small {
   align-items: center;
   padding: 0 40px;
   align-items: start;
+  justify-content: center;
 }
 .carrousel__title div {
   margin-top: 7px;
@@ -617,10 +622,11 @@ footer small {
   background-color: red;
 }
 .carrousel__title small {
-  font-family: AcuminPCM;
+  font-family: AcuminCItalic;
   font-size: 23px;
   line-height: 28px;
   text-transform: uppercase;
+  max-width: 254px;
 }
 .carrousel__news {
   display: flex;
@@ -661,7 +667,7 @@ footer small {
 .carrousel__news figure section a {
   color: white;
   position: absolute;
-  background-color: red;
+  background-color: #D92429;
   bottom: -9%;
   right: -9%;
   width: 36px !important;
@@ -866,6 +872,7 @@ footer small {
   font-family: AcuminC;
   text-align: left;
   color: black;
+  max-width: 231px;
 }
 
 .bannerAmarillo .containerAmarillo .containerRightAmarillo button{
@@ -982,6 +989,10 @@ p.p-6{
 }
 .inIconContainer{
   position: relative;
+}
+footer small{
+  font-size: 18px;
+  line-height: 24px;
 }
 @media (min-width: 1050px) {
   header {
@@ -1225,6 +1236,22 @@ p.p-6{
   .trepador figcaption p,
   .maps figcaption p {
     text-align: center;
+    font-size: 24px;
+    line-height: 23px;
+  }
+  .story p{
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .h2-chats{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bannerAmarillo .containerAmarillo .containerRightAmarillo p{
+    max-width: 459px;
+  }
+  .story .outIcon{
+    height: 30px;
   }
   .evidence {
     width: 70%;
@@ -1313,7 +1340,9 @@ p.p-6{
     width: 100%;
   }
   .credits h4 {
-    font-size: 18px;
+    font-size: 30px !important;
+    line-height: 35px !important;
+    text-align: left;
   }
   .credits section {
     width: 958px;
@@ -1393,14 +1422,14 @@ p.p-6{
     padding: 0;
   }
   .loop video{
-    margin-top: 33px;
+    margin-top: 29px;
   }
   .loop figcaption{
     padding: 0 51px;
     justify-content: center;
     margin-bottom: 45px;
   }
-  .loop figcaption p{
+  .loop figcaption p, .chats figcaption p{
     text-align: left;
     font-size: 19px;
     line-height: 20px;
@@ -1409,8 +1438,11 @@ p.p-6{
     display: inline;
   }
   .story .p3 img{
-    height: 32px !important;
+    height: 43px !important;
     margin-bottom: 10px;
+  }
+  .story .p3 .iconPeople{
+    height: 32px !important;
   }
   .story .p3{
     margin: 0 45px 40px 45px;
@@ -1512,7 +1544,7 @@ p.p-6{
     height: 100%;
   }
   .credits .preFooter p{
-    font-size: 20px;
+    font-size: 23px;
     line-height: 28px;
     height: 100%;
   }
@@ -1548,5 +1580,9 @@ p.p-6{
     width: 167px;
   }
 }
-
+@media only screen and (min-width: 399px) and (max-width: 1050px){
+  .loop{
+    margin-top: 7px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
