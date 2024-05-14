@@ -171,10 +171,12 @@ footer small a{
   max-width: 1920px;
 }
 .loop, .video {
-  margin-top: 72px;
   width: 100%;
   align-items: center;
   justify-items: center;
+}
+.initialVideo{
+  margin-top: 72px;
 }
 .video{
   display: flex;
@@ -462,7 +464,7 @@ h2 .lastSpan {
 .maps figcaption img {
   width: 21px;
   height: 16px;
-  margin-top: 3px;
+  margin-top: 1px;
   margin-right: 12px;
 }
 .loop figcaption p,
@@ -484,6 +486,7 @@ h2 .lastSpan {
   font-weight: 500;
   font-family: Acumin ExtraCondensed;
   padding: 0;
+  text-align: left;
 }
 
 .p3 {
