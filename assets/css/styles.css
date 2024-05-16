@@ -502,7 +502,6 @@ h2 .lastSpan {
 }
 .p3 p strong {
   background-color: #29C6A7;
-  padding-inline: 10px;
   color: #000000;
   font-weight: 700;
 }
@@ -954,6 +953,9 @@ footer small {
   max-width: 763px;
   font-family: AcuminPExBlack;
 }
+.preFooter p i{
+  color: black;
+}
 
 .preFooter a{
   color: white;
@@ -1392,6 +1394,9 @@ footer small{
   .carrousel__news figure section small{
     max-height: 150px;
     min-width: 203px;
+  }
+  .carrouselPhotos{
+    margin-top: 70px;
   }
 }
 @media (max-width: 1050px) {
