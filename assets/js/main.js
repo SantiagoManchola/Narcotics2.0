@@ -125,38 +125,63 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: imgHei
 })
 
 
-
+$(document).ready(function() {
   var images = [
-  "assets/images/scrollNavieras/C1.webp",
-  "assets/images/scrollNavieras/C2.webp",
-  "assets/images/scrollNavieras/C3.webp",
-  "assets/images/scrollNavieras/C4.webp",
-  "assets/images/scrollNavieras/C5.webp",
-  "assets/images/scrollNavieras/C6.webp",
-];
-var obj = {curImg: 0, scrollTop : 0};
+    "assets/images/scrollNavieras/C1.webp",
+    "assets/images/scrollNavieras/C2.webp",
+    "assets/images/scrollNavieras/C3.webp",
+    "assets/images/scrollNavieras/C4.webp",
+    "assets/images/scrollNavieras/C5.webp",
+    "assets/images/scrollNavieras/C6.webp"
+  ];
 
-var tween = TweenMax.to(obj, 0.5,
-  {
-    scrollTop: 1,
-    curImg: images.length - 1,
-    roundProps: "curImg",
-    immediateRender: true,
-    ease: Linear.easeNone,
-    onUpdate: function () {
-      $("#imagesequence-2").css("background-image", `url('${images[obj.curImg]}')`);
-      $(".animatedText").css("transform", "translateY(" + (-600* obj.scrollTop) + "vh)");  
+  // Función para precargar imágenes
+  function preloadImages(imageArray, callback) {
+    var loadedImages = 0;
+    var totalImages = imageArray.length;
+
+    function imageLoaded() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        callback();
+      }
+    }
+
+    for (var i = 0; i < totalImages; i++) {
+      var img = new Image();
+      img.src = imageArray[i];
+      img.onload = imageLoaded;
+      img.onerror = imageLoaded; // En caso de error, también llamar a la función
     }
   }
-);
 
-var controller = new ScrollMagic.Controller();
+  // Precargar imágenes y luego iniciar la animación
+  preloadImages(images, function() {
+    var obj = {curImg: 0, scrollTop: 0};
 
-// build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger-2", duration: "1200%", triggerHook : 0})
-        .setTween(tween)
-        .setPin("#imagesequence-2")
-        /* .addIndicators() */
-        .addTo(controller);
+    var tween = TweenMax.to(obj, 0.5, {
+      scrollTop: 1,
+      curImg: images.length - 1,
+      roundProps: "curImg",
+      immediateRender: true,
+      ease: Linear.easeNone,
+      onUpdate: function () {
+        $("#imagesequence-2").css("background-image", `url('${images[obj.curImg]}')`);
+        $(".animatedText").css("transform", "translateY(" + (-600 * obj.scrollTop) + "vh)");
+      }
+    });
 
+    var controller = new ScrollMagic.Controller();
 
+    // Build scene
+    var scene = new ScrollMagic.Scene({
+      triggerElement: "#trigger-2",
+      duration: "1200%",
+      triggerHook: 0
+    })
+    .setTween(tween)
+    .setPin("#imagesequence-2")
+    /* .addIndicators() */
+    .addTo(controller);
+  });
+});
