@@ -471,7 +471,7 @@ h2 .lastSpan {
 .maps figcaption {
   color: #FFFFFF;
   display: flex;
-  gap: 10px;
+  gap:5px;
   padding: 1em;
   justify-content: center;
 }
@@ -492,7 +492,7 @@ h2 .lastSpan {
   width: 21px;
   height: 16px;
   margin-top: 1px;
-  margin-right: 12px;
+  margin-right: 2px;
 }
 .loop figcaption p,
 .video figcaption p,
