@@ -237,8 +237,8 @@ footer small a{
   text-align: center;
   margin: 50vh 0px 50vh 0px;
   background-color: black;
-  padding: 50px 10px;
-  width: 100%;
+  padding: 50px;
+  width: 70%;
 }
 .animatedText {
   position: relative;

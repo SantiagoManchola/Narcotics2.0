@@ -163,7 +163,11 @@ $(document).ready(function() {
           immediateRender: true,
           ease: Linear.easeNone,
           onUpdate: function() {
-              $("#imagesequence-2").css("background-image", `url('${images[obj.curImg].src}')`);
+            $("#imagesequence-2").css({
+              "background-image": `url('${images[obj.curImg].src}')`,
+              "background-position": "50% 100%",
+              "background-size": "cover"
+          });
               $(".animatedText").css("transform", "translateY(" + (-600 * obj.scrollTop) + "vh)");
           }
       });
