@@ -130,7 +130,26 @@ main h2 {
   margin: 20px 0;
   font-family: Acumin ExtraCondensed;
 }
-
+h2 .indented {
+  display: inline-block;
+  padding: 0;
+  padding-inline: 7.5px;
+  color: white;
+  font-size: 36px;
+  line-height: 32px;
+  position: relative;
+}
+h2.title small {
+  font-size: 36px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 950;
+  font-family: Acumin Wide;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-inline: 7.5px;
+}
 main h1 strong {
   font-weight: 600;
   font-family: Acumin ExtraCondensed;
@@ -174,6 +193,12 @@ footer small a{
   width: 100%;
   align-items: center;
   justify-items: center;
+}
+.video.janJensen video{
+  max-height: 847px;
+  width: auto;
+  width: 100%;
+  padding: 0 20%;
 }
 .initialVideo{
   margin-top: 72px;
@@ -299,12 +324,14 @@ h2 {
   height: 100%;
 }
 h2 small {
-  font-size: 50px;
+  font-size: 36px;
   color: #000000;
-  line-height: 45px;
+  line-height: 32px;
   font-weight: 950;
   font-family: Acumin Wide;
-  padding-inline: 5px;
+  padding-inline: 15px;
+  text-decoration: none;
+  position: relative;
 }
 h2 span {
   font-weight: 600;
@@ -314,12 +341,12 @@ h2 span {
   color: #000000;
   text-align: center;
   font-family: AcuminCItalic;
-  padding-inline: 10px;
   line-height: 45px;
 }
 h2 .lastSpan {
   color: #FFFFFF;
-  margin-top: -5px;
+  line-height: 22px;
+  padding: 10px 0;
 }
 
 .loop__img,
@@ -835,9 +862,9 @@ footer small {
 .bannerAmarillo .containerAmarillo .containerLeftAmarillo h2{
   text-align: left;
   max-width: 350px;
+  width: 100%;
   font-size: 28px;
   line-height: 33px;
-  min-width: 390px;
   margin: 0;
 }
 .bannerAmarillo .containerAmarillo .containerLeftAmarillo h2 span{
@@ -847,7 +874,6 @@ footer small {
   padding-inline: 0;
   font-size: 28px;
   line-height: 33px;
-
 }
 .bannerAmarillo .containerAmarillo .containerLeftAmarillo h2 small{
   color: black;
@@ -877,7 +903,7 @@ footer small {
   max-width: 231px;
 }
 
-.bannerAmarillo .containerAmarillo .containerRightAmarillo button{
+.bannerAmarillo .containerAmarillo .containerRightAmarillo a{
   color: white;
   background-color: #D92429;
   line-height: 40px;
@@ -890,6 +916,10 @@ footer small {
   border: none;
   border-radius: 10px;
   font-family: AcuminPCondensedBlack;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .englishVersion{
@@ -999,6 +1029,20 @@ footer small{
   font-size: 18px;
   line-height: 24px;
 }
+@media(min-width:900px){
+  h2.title small{
+    font-size: 50px;
+    line-height: 45px;
+  }
+  main h1,main h1 span, main h1 strong{
+    font-size: 80px !important;
+    line-height: 77px !important;
+  }
+  h2 .indented {
+    font-size: 50px;
+    line-height: 45px !important;
+  }
+}
 @media (min-width: 1050px) {
   header {
     width: 100%;
@@ -1089,7 +1133,7 @@ footer small{
     justify-content: center;
     align-items: center;
     width: 70%;
-    margin: 20px 15%;
+    margin: 0px 15%;
   }
   .loop__img,
   .antonio__img,
@@ -1117,7 +1161,7 @@ footer small{
   .chats__photo,
   .trepador__photo,
   .maps__photo {
-    width: 90%;
+    width: 100%;
   }
   .loop__imgs,
   .antonio__imgs,
@@ -1294,10 +1338,6 @@ footer small{
   .policies .over {
     margin-top: 0;
   }
-  h2 {
-    width: 100%;
-    margin-inline: 15%;
-  }
   .map,
   .flourish-embed-iframe,
   .flourish-chart {
@@ -1396,7 +1436,7 @@ footer small{
     min-width: 203px;
   }
   .carrouselPhotos{
-    margin-top: 70px;
+    margin-top: 0;
   }
 }
 @media (max-width: 1050px) {
@@ -1408,11 +1448,6 @@ footer small{
   }
   .p1,.p2{
     margin: 0 36px !important;
-  }
-  h2 small,
-  h2 span {
-    font-size: 36px;
-    line-height: 32px;
   }
   .maersk {
     padding: 5px;
