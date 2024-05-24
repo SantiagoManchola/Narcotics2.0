@@ -126,7 +126,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: imgHei
 
 
 $(document).ready(function() {
-  var imageUrls = [
+  var imageUrlsDesktop = [
       "assets/images/scrollNavieras/C1.webp",
       "assets/images/scrollNavieras/C2.webp",
       "assets/images/scrollNavieras/C3.webp",
@@ -135,8 +135,22 @@ $(document).ready(function() {
       "assets/images/scrollNavieras/C6.webp",
   ];
 
+  var imageUrlsMobile = [
+      "assets/images/scrollNavieras/C1Mobile.webp",
+      "assets/images/scrollNavieras/C2Mobile.webp",
+      "assets/images/scrollNavieras/C3Mobile.webp",
+      "assets/images/scrollNavieras/C4Mobile.webp",
+      "assets/images/scrollNavieras/C5Mobile.webp",
+      "assets/images/scrollNavieras/C6Mobile.webp",
+  ];
+
   var images = [];
   var imagesLoaded = 0;
+
+  // Función para determinar el grupo de imágenes a utilizar
+  function getImageUrls() {
+      return window.innerWidth <= 500 ? imageUrlsMobile : imageUrlsDesktop;
+  }
 
   // Precargar imágenes
   function preloadImages(urls, callback) {
@@ -163,11 +177,10 @@ $(document).ready(function() {
           immediateRender: true,
           ease: Linear.easeNone,
           onUpdate: function() {
-            $("#imagesequence-2").css({
-              "background-image": `url('${images[obj.curImg].src}')`,
-              "background-position": "50% 100%",
-              "background-size": "cover"
-          });
+              $("#imagesequence-2").css({
+                  "background-image": `url('${images[obj.curImg].src}')`,
+                  "background-size": "cover",
+              });
               $(".animatedText").css("transform", "translateY(" + (-600 * obj.scrollTop) + "vh)");
           }
       });
@@ -182,5 +195,15 @@ $(document).ready(function() {
   }
 
   // Precargar imágenes y luego iniciar ScrollMagic
-  preloadImages(imageUrls, initScrollMagic);
+  preloadImages(getImageUrls(), initScrollMagic);
+  
+  // Recalcular y recargar imágenes si cambia el tamaño de la ventana
+  $(window).resize(function() {
+      if ((window.innerWidth <= 500 && images[0].src !== imageUrlsMobile[0]) ||
+          (window.innerWidth > 500 && images[0].src !== imageUrlsDesktop[0])) {
+          images = [];
+          imagesLoaded = 0;
+          preloadImages(getImageUrls(), initScrollMagic);
+      }
+  });
 });
