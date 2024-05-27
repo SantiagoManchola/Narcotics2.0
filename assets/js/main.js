@@ -160,14 +160,4 @@ $(document).ready(function() {
 
   // Precargar imágenes y luego iniciar ScrollMagic
   preloadImages(getImageUrls(), initScrollMagic);
-  
-  // Recalcular y recargar imágenes si cambia el tamaño de la ventana
-  $(window).resize(function() {
-      if ((window.innerWidth <= 1200 && images[0].src !== imageUrlsMobile[0]) ||
-          (window.innerWidth > 1200 && images[0].src !== imageUrlsDesktop[0])) {
-          images = [];
-          imagesLoaded = 0;
-          preloadImages(getImageUrls(), initScrollMagic);
-      }
-  });
 });
