@@ -125,7 +125,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: imgHei
 })
 
 
-$(document).ready(function() {
+(function() {
   var imageUrlsDesktop = [
       "assets/images/scrollNavieras/C1.webp",
       "assets/images/scrollNavieras/C2.webp",
