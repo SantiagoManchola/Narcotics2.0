@@ -157,7 +157,7 @@ main h1 strong {
 main p {
   font-family: AcuminC;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 26px;
   text-align: center;
 }
 main a *, main a {
@@ -475,6 +475,7 @@ h2 .lastSpan {
   gap:5px;
   padding: 1em;
   justify-content: center;
+  margin: 0 36px;
 }
 .loop figcaption img,
 .video figcaption img,
@@ -628,12 +629,20 @@ footer small {
   max-width: 1070px;
   margin: 30px 0;
 }
-.carrousel .arrow {
+.carrousel .arrowRight {
   object-fit: contain;
   height: 52px;
   cursor: pointer;
   position: absolute;
   right: 0;
+  top: 35%;
+}
+.carrousel .arrowLeft {
+  object-fit: contain;
+  height: 52px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
   top: 35%;
 }
 .carrousel__title {
@@ -642,7 +651,7 @@ footer small {
   align-items: center;
   padding: 0 40px;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
 }
 .carrousel__title div {
   margin-top: 7px;
@@ -656,7 +665,6 @@ footer small {
   font-size: 23px;
   line-height: 28px;
   text-transform: uppercase;
-  max-width: 254px;
 }
 .carrousel__news {
   display: flex;
@@ -721,37 +729,26 @@ footer small {
   display: none;
 }
 .imgs-registro-belg{
-  display: grid;
-  /* grid-template-columns: repeat(5,1fr); */
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-column-gap:18px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap:0;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  max-width: 980px;
 }
 
 .imgs-registro-belg img{
-  max-width: 203px;
+  max-width: 20%;
   width: 100%;
 }
 @media (max-width: 1050px) {
   .imgs-registro-belg {
-    grid-template-columns: repeat(3,minmax(0,200px));
+    grid-column-gap: 7px;
     margin: 0 44px;
   }
-  .imgs-registro-belg img:nth-child(1) {
-    grid-column: 1 / 2; /* Starts on the third column line and ends on the fifth column line */
-  }
-  .imgs-registro-belg img:nth-child(2) {
-    grid-column: 2 / 3; /* Starts on the third column line and ends on the fifth column line */
-  }
-  .imgs-registro-belg img:nth-child(3) {
-    grid-column: 3 / 4; /* Starts on the third column line and ends on the fifth column line */
-  }
-  .imgs-registro-belg img:nth-child(4) {
-    grid-column: -4 / -3; /* Starts on the third column line and ends on the fifth column line */
-  }
-  .imgs-registro-belg img:nth-child(5) {
-    grid-column: -3 / -2; /* Starts on the third column line and ends on the fifth column line */
+  .imgs-registro-belg img {
+    max-width: 30%;
   }
 }
 
@@ -790,7 +787,12 @@ footer small {
   flex-direction: column;
   max-width: 920px;
 }
-.bannerVerde h3 b{
+.bannerVerde h3 i{
+  color: black;
+  font-family: "AcuminPCItalic";
+
+}
+.bannerVerde h3 i b{
   font-weight: bold;
   color: black;
   font-family: "AcuminPCondensedBlackItalic";
@@ -1266,11 +1268,12 @@ footer small{
   .chats figcaption,
   .trepador figcaption,
   .maps figcaption {
-    padding: 1em 2em;
-    width: 80%;
+    padding: 1em;
+    max-width: 980px;
     margin-inline: 10%;
     gap: 5px;
     justify-content: center;
+    margin: auto;
   }
   .loop figcaption p,
   .video figcaption p,
