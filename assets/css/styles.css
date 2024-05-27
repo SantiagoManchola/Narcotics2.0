@@ -195,9 +195,8 @@ footer small a{
   justify-items: center;
 }
 .video.janJensen video{
-  max-height: 847px;
   width: auto;
-  width: 100%;
+  max-width: 100%;
   padding: 0 20%;
 }
 .initialVideo{

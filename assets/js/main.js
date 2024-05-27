@@ -149,7 +149,7 @@ $(document).ready(function() {
 
   // Función para determinar el grupo de imágenes a utilizar
   function getImageUrls() {
-      return window.innerWidth <= 500 ? imageUrlsMobile : imageUrlsDesktop;
+      return window.innerWidth <= 1200 ? imageUrlsMobile : imageUrlsDesktop;
   }
 
   // Precargar imágenes
@@ -199,8 +199,8 @@ $(document).ready(function() {
   
   // Recalcular y recargar imágenes si cambia el tamaño de la ventana
   $(window).resize(function() {
-      if ((window.innerWidth <= 500 && images[0].src !== imageUrlsMobile[0]) ||
-          (window.innerWidth > 500 && images[0].src !== imageUrlsDesktop[0])) {
+      if ((window.innerWidth <= 1200 && images[0].src !== imageUrlsMobile[0]) ||
+          (window.innerWidth > 1200 && images[0].src !== imageUrlsDesktop[0])) {
           images = [];
           imagesLoaded = 0;
           preloadImages(getImageUrls(), initScrollMagic);
