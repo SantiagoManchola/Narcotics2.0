@@ -812,8 +812,9 @@
       document.getElementById('generarTweet').addEventListener('click', function() {
       var message = "Los narcos colombianos han preferido a Maersk y CMA-CGM para traficar cocaína a Centroamérica, Europa y EE.UU.  👇";
       var link = "https://narcotics2-0.vercel.app/";
+      var hashtag = "#FavoritasDeLaMafia"
 
-      var tweet = message + "\n" + link ;
+      var tweet = message + "\n" + link + "\n" + "hastag" ;
 
       var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
       window.open(url, '_blank');
