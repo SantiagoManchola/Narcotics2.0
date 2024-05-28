@@ -10,13 +10,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Cuestión pública" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@cuestion_p">
-    <meta name="twitter:title" content="Las favoritas de la mafia">
-    <meta name="twitter:description" content="Buques, contenedores y muelles de llegada de Maersk y CMA-CGM en Europa son mencionados por criminales para hablar en clave sobre envíos y rutas de cocaína.">
-    <meta name="twitter:image" content="https://narcotics2-0.vercel.app/assets/images/16_9.webp">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@cuestion_p">
+    <meta property="twitter:title" content="Las favoritas de la mafia">
+    <meta property="twitter:description" content="Buques, contenedores y muelles de llegada de Maersk y CMA-CGM en Europa son mencionados por criminales para hablar en clave sobre envíos y rutas de cocaína.">
+    <meta property="twitter:image" content="https://narcotics2-0.vercel.app/assets/images/16_9.webp">
 
-    <link rel="shortcut icon" href="assets/images/favicon.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Las favoritas de la mafia</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
   </head>
@@ -206,7 +206,7 @@
 
         <section>
           <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@cuestionp?lang=es"><img height="36" width="36" src="assets/icons/Icon_TikTok.png" alt="tiktok" /></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/cuestion_p?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img height="36.77" width="36.77" src="assets/icons/Icon_Equis.png" alt="x" /></a>
+          <a target="_blank" rel="noopener noreferrer" id="generarTweet"><img height="36.77" width="36.77" src="assets/icons/Icon_Equis.png" alt="x" /></a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cuestionp/"><img height="36" width="36" src="assets/icons/Icon_IG.png" alt="instagram" /></a>
           <a target="_blank" rel="noopener noreferrer" href="https://whatsapp.com/channel/0029VaEtuJyChq6KoF971k0M "><img height="36" width="36" src="assets/icons/Icon_W.png" alt="wpp" /></a>
           <a target="_blank" rel="noopener noreferrer" href="https://t.me/hablanloshechos "><img height="34" width="34" src="assets/icons/Icon_T.png" alt="telegram" /></a>
@@ -788,5 +788,17 @@
     <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="assets/js/main.min.js" type="text/javascript"></script>
+    <script>
+      document.getElementById('generarTweet').addEventListener('click', function() {
+      var message = "Los narcos colombianos han preferido a Maersk y CMA-CGM para traficar cocaína a Centroamérica, Europa y EE.UU.  👇";
+      var link = "https://narcotics2-0.vercel.app/";
+
+      var tweet = message + "\n" + link ;
+
+      var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
+      window.open(url, '_blank');
+      });
+    </script>
   </body>
 </html>
