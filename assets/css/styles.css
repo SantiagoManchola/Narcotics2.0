@@ -933,6 +933,7 @@ footer small {
   justify-content: center;
   margin: 95px 0 65px;
   width: 100%;
+  gap: 18px;
 }
 .englishVersion .textContainer{
   display: flex;
@@ -940,7 +941,6 @@ footer small {
   gap: 0px;
   padding-right: 18px;
   border-right: 6px solid #F4A23E;
-  gap: 18px;
 }
 .englishVersion .textContainer h2{
   text-align: right;
