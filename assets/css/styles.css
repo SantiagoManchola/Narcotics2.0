@@ -1547,6 +1547,7 @@ footer small{
   .bannerVerde h3{
     font-size: 25px;
     line-height: 26px;
+    padding: 0 30px;
   }
   
   .bannerWhite .container{
