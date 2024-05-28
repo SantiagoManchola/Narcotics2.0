@@ -940,6 +940,7 @@ footer small {
   gap: 0px;
   padding-right: 18px;
   border-right: 6px solid #F4A23E;
+  gap: 18px;
 }
 .englishVersion .textContainer h2{
   text-align: right;
@@ -1699,7 +1700,7 @@ footer small{
 .fichatecnica .textContainer .button a{
   width: 100%;
   max-width: 257px;
-  padding: 15px 35px;
+  padding: 15px 40px;
   background-color: #D92429;
   font-family: AcuminPCondensedBlack;
   text-align: center;
