@@ -1755,8 +1755,18 @@ footer small{
     width: 100%;
     justify-content: space-between;
   }
+  .fichatecnica .textContainer .title{
+    font-size: 30px;
+    line-height: 30px;
+  }
   .fichatecnica .textContainer .content{
+    font-size: 30px;
+    line-height: 30px;
     max-width: 430px;
+  }
+  .fichatecnica .textContainer .button a{
+  font-size: 30px;
+  line-height: 30px;
   }
   .fichatecnica .textContainer .leftTextContainer{
     max-width: none;
