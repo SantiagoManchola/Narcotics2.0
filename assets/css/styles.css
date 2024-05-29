@@ -1,70 +1,70 @@
 @font-face {
   font-family: Acumin Wide;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProWide/Acumin%20Pro%20Wide%20UltraBlack.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProWide/Acumin%20Pro%20Wide%20UltraBlack.otf);
 }
 @font-face {
   font-family: Acumin ExtraCondensed;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Light.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Light.otf);
 }
 @font-face {
   font-family: Acumin ExtraCondensedBold;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Bold.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Bold.otf);
 }
 @font-face {
   font-family: AcuminC;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold%20Italic.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold%20Italic.otf);
 }
 @font-face {
   font-family: AcuminPCItalic;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Semibold%20Italic.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Semibold%20Italic.otf);
 }
 @font-face {
   font-family: AcuminProCondBold;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Bold.otf);
 }
 @font-face {
   font-family: AcuminCItalic;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Light.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Light.otf);
 }
 @font-face {
   font-family: AcuminPBlack;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Black%20Italic.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin%20Pro%20ExtraCond%20Black%20Italic.otf);
 }
 @font-face {
   font-family: AcuminPCSemibold;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Semibold.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin%20Pro%20Cond%20Semibold.otf);
 }
 @font-face {
   font-family: AcuminPExBlack;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin\ Pro\ ExtraCond\ Black.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProExtraCondensed/Acumin\ Pro\ ExtraCond\ Black.otf);
 }
 @font-face {
   font-family: AcuminPCondensedBlack;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black.otf);
 }
 @font-face {
   font-family: AcuminPCondensedBlackItalic;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black\ Italic.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black\ Italic.otf);
 }
 @font-face {
   font-family: AcuminPCUBItalic;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ UltraBlack\ Italic.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ UltraBlack\ Italic.otf);
 }
 @font-face {
   font-family: AcuminPCMItalic;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium\ Italic.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium\ Italic.otf);
 }
 @font-face {
   font-family: AcuminPCBlack;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Black.otf);
 }
 @font-face {
   font-family: AcuminPCM;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Medium.otf);
 }
 @font-face {
   font-family: AcuminPCR;
-  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Regular.otf);
+  src: url(../fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Regular.otf);
 }
 * {
   padding: 0;
@@ -257,7 +257,7 @@ footer small a{
   align-items: center;
 }
 .maersk figure {
-  background-image: url("/assets/images/fondoverde.webp");
+  background-image: url("../images/fondoverde.webp");
   padding: 20px;
   background-size: cover;
 }
@@ -265,7 +265,7 @@ footer small a{
   object-fit: cover;
 }
 .maersk figure p {
-  background-image: url("/assets/images/fondoverde.webp");
+  background-image: url("../images/fondoverde.webp");
   background-repeat: no-repeat;
   text-align: start;
   margin-top: -100px;
@@ -298,7 +298,7 @@ footer small a{
 }
 
 .evidence {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0)), url("/assets/images/maersk.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0)), url("../images/maersk.webp");
 }
 .evidence img {
   width: 100%;
@@ -409,7 +409,7 @@ h2 .lastSpan {
 .chats .wbg,
 .trepador .wbg,
 .maps .wbg {
-  background-image: url("/assets/images/fondoverde.webp");
+  background-image: url("../images/fondoverde.webp");
   padding: -20px;
 }
 .loop section,
@@ -584,7 +584,7 @@ h2 .lastSpan {
   width: 100%;
 }
 .credits figcaption {
-  background-image: url("/assets/images/bgYellow.webp");
+  background-image: url("../images/bgYellow.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
@@ -753,7 +753,7 @@ footer small {
 }
 
 .bannerAmarillo{
-  background-image: url("/assets/images/fondoAmarillo.webp");
+  background-image: url("../images/fondoAmarillo.webp");
   width: 100%;
   height: 100%;
   display: flex;
@@ -770,7 +770,7 @@ footer small {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url(/assets/images/bgVerde.webp) center no-repeat;
+  background: url(../images/bgVerde.webp) center no-repeat;
   background-size: cover;
 }
 .bannerVerde h3{
@@ -798,7 +798,7 @@ footer small {
   font-family: "AcuminPCondensedBlackItalic";
 }
 .bannerWhite{
-  background: url("/assets/images/bgWhite.webp") center;
+  background: url("../images/bgWhite.webp") center;
   padding: 20px 0;
   background-size: cover;
   height: 100%;
@@ -966,7 +966,7 @@ footer small {
   font-family: AcuminC;
 }
 .preFooter{
-  background: url("/assets/images/fondoamarilloPc.webp") center no-repeat;
+  background: url("../images/fondoamarilloPc.webp") center no-repeat;
   display: flex;
   flex-direction:column;
   justify-content: space-between;
@@ -1103,7 +1103,7 @@ footer small{
     padding: 0;
   }
   .maersk figure img {
-    background-image: url("/assets/images/fondoverde.webp");
+    background-image: url("../images/fondoverde.webp");
   }
   .maersk figure p {
     background-image: none;
@@ -1180,7 +1180,7 @@ footer small{
   .trepador__imgs,
   .maps__imgs {
     display: flex;
-    background-image: url("/assets/images/fondoverde.webp");
+    background-image: url("../images/fondoverde.webp");
   }
   .loop__imgs img:last-child,
   .antonio__imgs img:last-child,
@@ -1502,7 +1502,7 @@ footer small{
   }
   .story i
   .bannerAmarillo{
-    background-image: url(/assets/images/bgAmarilloMovil.webp);
+    background-image: url(../images/bgAmarilloMovil.webp);
     min-height: 736px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1588,7 +1588,7 @@ footer small{
   }
   .credits .preFooter{
     padding: 48px 60px 48px 60px;
-    background: url(/assets/images/preFooterbg.webp) center no-repeat;
+    background: url(../images/preFooterbg.webp) center no-repeat;
     background-size: cover; 
     max-width: 500px;
     height: 100%;
