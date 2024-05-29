@@ -960,10 +960,11 @@ footer small {
   font-family: AcuminPCMItalic;
   font-weight: normal;
 }
-.englishVersion .textContainer p span{
+.englishVersion .textContainer p a{
   background-color: #F4A23E;
   color: black;
   font-family: AcuminC;
+  text-decoration: none;
 }
 .preFooter{
   background: url("../images/fondoamarilloPc.webp") center no-repeat;
